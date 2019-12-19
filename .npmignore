@@ -3,4 +3,4 @@ jest.config.js
 .coveralls.yml
 coverage
 .nvmrc
-travis.yml
+.travis.yml
