@@ -16,6 +16,23 @@ const {bisect} = require('bisect');
 const [odds, evens] = bisect([1, 2, 3, 4, 5, 6, 7, 8, 9], n => n % 2);
 console.log(odds, evens);
 // [ 1, 3, 5, 7, 9 ] [ 2, 4, 6, 8 ]
+
+const [binary, nonbinary] = bisect([
+  {name: 'Jill Stevens', gender: 'f'},
+  {name: 'Lars Björkblom', gender: 'm'},
+  {name: 'Kim Carlsen', gender: 'n'},
+  {name: 'Autumn Bix', gender: 'n'},
+], person => ['m', 'f'].some(gender => gender === person.gender));
+console.log(binary, nonbinary);
+/*
+[
+  { name: 'Jill Stevens', gender: 'f' },
+  { name: 'Lars Björkblom', gender: 'm' }
+] [
+  { name: 'Kim Carlsen', gender: 'n' },
+  { name: 'Autumn Bix', gender: 'n' }
+]
+*/
 ```
 
 ## Polyfill
