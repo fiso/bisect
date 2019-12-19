@@ -1,6 +1,6 @@
 {
   "name": "@fhaglund/bisect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creates two new arrays based on a single input array and a predicate function.",
   "author": "Filip Haglund",
   "license": "ISC",
