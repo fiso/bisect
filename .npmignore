@@ -1,2 +1,6 @@
 jest.config.js
 *.test.js
+.coveralls.yml
+coverage
+.nvmrc
+travis.yml
