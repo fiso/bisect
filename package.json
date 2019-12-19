@@ -1,6 +1,6 @@
 {
   "name": "@fhaglund/bisect",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Creates two new arrays based on a single input array and a predicate function.",
   "keywords": [
     "javascript",
