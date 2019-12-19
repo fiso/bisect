@@ -1,0 +1,16 @@
+{
+  "name": "@fhaglund/bisect",
+  "version": "1.0.0",
+  "description": "Creates two new arrays based on a single input array and a predicate function.",
+  "author": "Filip Haglund",
+  "license": "ISC",
+  "repository": "https://github.com/fiso/bisect",
+  "main": "bisect.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.9",
+    "jest": "^24.9.0"
+  }
+}
