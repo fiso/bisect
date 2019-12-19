@@ -1,7 +1,7 @@
 # Bisect
 
 [![Build Status](https://travis-ci.com/fiso/bisect.svg?branch=master)](https://travis-ci.com/fiso/bisect)
-[![Coverage Status](https://coveralls.io/repos/github/fiso/bisect/badge.svg?branch=master)](https://coveralls.io/github/fiso/bisect?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/fiso/bisect/badge.svg?branch=master&cachebust=1)](https://coveralls.io/github/fiso/bisect?branch=master)
 
 Creates two new arrays based on a single input array and a predicate function.
 Returns an array of length 2 with the the array of elements that passed the
