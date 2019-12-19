@@ -1,8 +1,15 @@
 {
   "name": "@fhaglund/bisect",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Creates two new arrays based on a single input array and a predicate function.",
-  "keywords": [ "javascript", "array", "polyfill", "bisect", "bisection", "functional" ],
+  "keywords": [
+    "javascript",
+    "array",
+    "polyfill",
+    "bisect",
+    "bisection",
+    "functional"
+  ],
   "author": "Filip Haglund",
   "license": "ISC",
   "repository": "https://github.com/fiso/bisect",
