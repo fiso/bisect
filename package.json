@@ -15,6 +15,7 @@
   "repository": "https://github.com/fiso/bisect",
   "main": "bisect.js",
   "scripts": {
+    "benchmark": "node benchmark.js",
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "devDependencies": {

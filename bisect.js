@@ -6,16 +6,24 @@ function bisect (a, b) {
   if (typeof predicate !== 'function') {
     throw new TypeError(`${predicate} is not a function`);
   }
+
   if (!Array.isArray(array)) {
     throw new TypeError(`${array} is not an array`);
   }
-  return array.reduce((acc, val) => {
-    const matches = predicate(val);
-    return [
-      [...acc[0], ...matches ? [val] : []],
-      [...acc[1], ...matches ? [] : [val]],
-    ];
-  }, [[], []]);
+
+  const A = [];
+  const B = [];
+
+  for (let i = 0; i < array.length; i++) {
+    const el = array[i];
+    if (predicate(el)) {
+      A.push(el);
+    } else {
+      B.push(el);
+    }
+  }
+
+  return [A, B];
 }
 
 function polyfill () {

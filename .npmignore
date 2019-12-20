@@ -4,3 +4,4 @@ jest.config.js
 coverage
 .nvmrc
 .travis.yml
+benchmark.js
