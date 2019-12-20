@@ -1,7 +1,7 @@
 {
   "name": "@fhaglund/bisect",
   "version": "1.1.2",
-  "description": "Creates two new arrays based on a single input array and a predicate function.",
+  "description": "Splits an array into two halves, as determined by a predicate function.",
   "keywords": [
     "javascript",
     "array",
