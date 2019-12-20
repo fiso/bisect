@@ -1,4 +1,8 @@
-function bisect (array, predicate) {
+function bisect (a, b) {
+  const polyfilled = Array.isArray(this);
+  const predicate = polyfilled ? a : b;
+  const array = polyfilled ? this : a;
+
   if (typeof predicate !== 'function') {
     throw new TypeError(`${predicate} is not a function`);
   }
@@ -16,9 +20,7 @@ function bisect (array, predicate) {
 
 function polyfill () {
   if (!Array.prototype.bisect) {
-    Array.prototype.bisect = function (predicate) {
-      return bisect(this, predicate);
-    };
+    Array.prototype.bisect = bisect;
   }
 }
 
