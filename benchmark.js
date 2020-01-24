@@ -10,4 +10,5 @@ for (let i = 0; i < iterations; i++) {
   bisect.bisect(digits, evenOddPredicate);
 }
 time = process.hrtime(start);
-console.log(`${iterations} iterations took ${time[0]}.${time[1]}s`);
+const t = Number(`${time[0]}.${time[1]}`);
+console.log(`${iterations.toLocaleString()} iterations completed in ${t}s (${Math.round(iterations / t).toLocaleString()} iterations per second)`);
